@@ -18,8 +18,6 @@ export class PressedKeyListener extends React.Component {
   }
 
   componentWillUnmount() {
-    this.setState({ pressedKey: 'Nothing was pressed yet' });
-
     window.removeEventListener('keyup', this.changePhraseHandler);
   }
 
